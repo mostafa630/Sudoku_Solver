@@ -44,7 +44,7 @@ void printGrid()
         int c = value.second.second;
         grid[r][c]=num;
     }
-    cout<<endl<<"#--------> result of this sudoku <----------#"<<endl<<endl;;
+    cout<<endl<<"#--------> result of this sudoku <----------#"<<endl<<endl;
     for(int i =0 ;i<9 ;i++)
     {
         for(int j =0 ;j<9 ;j++)
@@ -109,4 +109,6 @@ int main()
         }
     }
     SolveSudoku(0);
+    if(!isSolved)
+        cout<<"#--> sorry there is no valid solution for this puzzel , please enter valid puzzle !\n";
 }
